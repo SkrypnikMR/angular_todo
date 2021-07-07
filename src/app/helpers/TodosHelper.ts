@@ -7,7 +7,11 @@ export default class TodosHelper {
         return JSON.parse(todos);
     }
     putTodos(todos: Todo[]) {
-        console.log('yes');
         localStorage.setItem('todos', JSON.stringify(todos))
+    }
+    playRemoveMusic() {
+        const removeAudio = new Audio('assets/waka.mp3');
+        removeAudio.volume = 0.4;
+        removeAudio.play();
     }
 }
