@@ -10,24 +10,31 @@ ul{
     justify-content: center;
     flex-direction: column;
     li{
-        width: 100%;
-        cursor:default;
+        width: 600px;
+        cursor: default;
         position: relative;
-        border: 1px solid #eee;
+        border: .5px solid #eee;
         border-radius: 5px;
-        padding: .5rem 1rem;
-        margin-bottom: .5rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
         display: grid;
-        height: 20px;
-        grid-template: repeat(1,.5fr) / repeat(1,2fr) repeat(1,1fr) repeat(1, .1fr);
-        align-items: flex-start;
+        height: 40px;
+        grid-template: repeat(1, 0.5fr)/repeat(1, 2fr) repeat(1, 1fr) repeat(1, 0.1fr);
+        align-items: center;
         justify-content: space-around;
+        transition: 0.3s all;
+        background: rgba(0,0,0,.4);
+        color: yellow;
+        font-size: 31px;
         transition: .3s all;
         &:hover{
             background-color: #eee;
         }
         small{
             margin-top:3px;
+        }
+        span {
+            position: relative;
         }
     }
     input {
@@ -39,6 +46,9 @@ ul{
 
 .rm {
     $bgcolor: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 25%;
     background-color: $bgcolor;
     color: rgb(208, 255, 0);
