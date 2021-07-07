@@ -4,11 +4,12 @@
     </div>
     <li *ngFor="let todo of todosService.todos | todosFilter:search let i = index">
         <span [class.done]="todo.completed">
-            <input class="todo-checkbox" type="checkbox" [checked]="todo.completed" (change)="onChange(todo.id)">
+            <img *ngIf="!todo.completed" src="assets/head.png" (click)="onChange(todo.id)" />
+            <img *ngIf="todo.completed" src="assets/head.png" (click)="onChange(todo.id)" />
             {{todo.title}}
         </span>
         <small>{{todo.date | date:'shortTime'}}</small>
-        <button class="rm" (click)="removeTodo(todo.id)">x</button>
+        <button class=" rm" (click)="removeTodo(todo.id)">x</button>
     </li>
 </ul>
 
