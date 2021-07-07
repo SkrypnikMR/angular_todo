@@ -14,4 +14,9 @@ export default class TodosHelper {
         removeAudio.volume = 0.4;
         removeAudio.play();
     }
+    playCheckMusic() {
+        const removeAudio = new Audio('assets/small_waka.mp3');
+        removeAudio.volume = 0.4;
+        removeAudio.play();
+    }
 }

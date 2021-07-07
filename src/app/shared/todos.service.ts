@@ -14,6 +14,7 @@ export class TodosService extends TodosHelper{
   onToggle(id: number) {
     const idx = this.todos.findIndex(t => t.id === id);
     this.todos[idx].completed = !this.todos[idx].completed;
+    this.playCheckMusic();
   }
   removeTodo(id: number) {
     document.getElementById(`${id}`)?.classList.remove('hide');
@@ -25,6 +26,7 @@ export class TodosService extends TodosHelper{
     }, 2000)
   }
   addTodo(todo: Todo) {
+    console.log(todo);
     this.todos.push(todo);
     this.putTodos(this.todos);
   }
