@@ -16,8 +16,8 @@ export class TodosService extends TodosHelper{
     this.todos[idx].completed = !this.todos[idx].completed;
   }
   removeTodo(id: number) {
-    document.getElementById('head')?.classList.remove('hide');
-    document.getElementById('head')?.classList.add('startAnimationMove');
+    document.getElementById(`${id}`)?.classList.remove('hide');
+    document.getElementById(`${id}`)?.classList.add('startAnimationMove');
     this.playRemoveMusic();
     setTimeout(() => {
       this.todos = this.todos.filter(t => t.id !== id);
