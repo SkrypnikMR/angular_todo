@@ -37,8 +37,11 @@ ul{
             position: relative;
         }
     }
-    input {
+    img {
         margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
     }
     .done {
     text-decoration: line-through;
