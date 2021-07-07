@@ -97,3 +97,18 @@ ul{
         }
     }
 }
+.animation-head {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    background: url('../../assets/head.png') no-repeat;
+    left: -920px;
+    transform: scale(0.14); 
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.hide {
+    display: none;
+}
