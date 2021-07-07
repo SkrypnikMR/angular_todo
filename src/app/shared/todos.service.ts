@@ -18,11 +18,11 @@ export class TodosService extends TodosHelper{
   removeTodo(id: number) {
     document.getElementById('head')?.classList.remove('hide');
     document.getElementById('head')?.classList.add('startAnimationMove');
+    this.playRemoveMusic();
     setTimeout(() => {
       this.todos = this.todos.filter(t => t.id !== id);
       this.putTodos(this.todos);
-      this.playRemoveMusic();
-    }, 4000)
+    }, 2000)
   }
   addTodo(todo: Todo) {
     this.todos.push(todo);
