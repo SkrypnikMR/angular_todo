@@ -1,7 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Tourney', cursive;
     height: 100vh;
-    background: url('./img/bg2.jpeg') 50% 50% no-repeat;
+    background: url('./img/bg2.jpeg') 50% 30% no-repeat;
     input {
         font-family: 'Tourney', cursive;
         &::placeholder {

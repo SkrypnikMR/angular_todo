@@ -1,34 +1,39 @@
 div{
-    // font-family: 'Play', sans-serif;
     width: 100vh;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    
     input{
-        // font-family: 'Play', sans-serif;
         flex-basis: 80%;
         height: 100%;
-        border: 1px solid #ccc;
+        border: 3px solid yellow;
         border-radius: 5px;
         outline: none;
-        padding: 0 .5rem;
-        // &::placeholder{
-            //   font-family: 'Play', sans-serif;
-        // }
+        padding: 0 1rem;
+        // margin-right: 20px;
+        background: rgba(0,0,0,.6);
+        color: yellow;
+        font-size: 20px;
+        &::placeholder {
+            color: yellow;
+            opacity: .5;
+        }
     }
     button{
-        $color: #eee;
+        $color: yellow;
         flex-basis: 20%;
         height: 100%;
-        border: 1px solid #ccc;
+        border: 3px solid #fff;
         border-radius: 5px;
         outline: none;
         background: $color;
         transition: .3s all;
         cursor: pointer;
+        font-size: 28px;
+        color: #000;
+        margin-left: 20px;
         &:hover{
             background: darken($color, 20%);
         }
