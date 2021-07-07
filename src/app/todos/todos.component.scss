@@ -8,7 +8,7 @@ ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    li{
+    .li{
         width: 600px;
         cursor: default;
         position: relative;
@@ -26,7 +26,9 @@ ul{
         background: rgba(0,0,0,.4);
         color: yellow;
         font-size: 31px;
-        transition: .3s all;
+        // animation-name: deleteOpacity;
+        // animation-delay: 1s;
+        // animation-duration: .1s;
         &:hover{
             background-color: rgba(102, 102, 102, 0.781);
         }
@@ -102,13 +104,47 @@ ul{
     width: 1000px;
     height: 1000px;
     background: url('../../assets/head.png') no-repeat;
-    left: -920px;
+    left: -950px;
     transform: scale(0.14); 
     img {
         width: 100%;
         height: auto;
     }
 }
+.startAnimationMove {
+    animation-name: movingRight;
+    animation-duration: 1.5s;
+}
 .hide {
     display: none;
+}
+
+@keyframes deleteOpacity {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes movingRight {
+    0% {
+        display: block;
+    }
+    15% {
+        transform: translateX(40%);
+    }
+    30% {
+        transform: translateX(60%);
+    }
+    45% {
+        transform: translateX(80%);
+    }
+    60% {
+        transform: translateX(100%);
+    }
+    85% {
+        transform: translateX(120%);
+    }
+    100% {
+        transform: translateX(140%);
+    }
 }

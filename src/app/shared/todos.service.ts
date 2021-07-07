@@ -16,9 +16,13 @@ export class TodosService extends TodosHelper{
     this.todos[idx].completed = !this.todos[idx].completed;
   }
   removeTodo(id: number) {
-    this.todos = this.todos.filter(t => t.id !== id);
-    this.putTodos(this.todos);
-    this.playRemoveMusic();
+    document.getElementById('head')?.classList.remove('hide');
+    document.getElementById('head')?.classList.add('startAnimationMove');
+    setTimeout(() => {
+      this.todos = this.todos.filter(t => t.id !== id);
+      this.putTodos(this.todos);
+      this.playRemoveMusic();
+    }, 4000)
   }
   addTodo(todo: Todo) {
     this.todos.push(todo);
