@@ -1,5 +1,5 @@
 div{
-    font-family: 'Play', sans-serif;
+    // font-family: 'Play', sans-serif;
     width: 100vh;
     height: 40px;
     display: flex;
@@ -8,16 +8,16 @@ div{
     margin-top: 1rem;
     
     input{
-        font-family: 'Play', sans-serif;
+        // font-family: 'Play', sans-serif;
         flex-basis: 80%;
         height: 100%;
         border: 1px solid #ccc;
         border-radius: 5px;
         outline: none;
         padding: 0 .5rem;
-        &::placeholder{
-              font-family: 'Play', sans-serif;
-        }
+        // &::placeholder{
+            //   font-family: 'Play', sans-serif;
+        // }
     }
     button{
         $color: #eee;

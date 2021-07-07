@@ -18,6 +18,7 @@ export class TodosService extends TodosHelper{
   removeTodo(id: number) {
     this.todos = this.todos.filter(t => t.id !== id);
     this.putTodos(this.todos);
+    this.playRemoveMusic();
   }
   addTodo(todo: Todo) {
     this.todos.push(todo);

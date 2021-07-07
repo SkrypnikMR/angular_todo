@@ -1,4 +1,14 @@
 body{
+    font-family: 'Tourney', cursive;
     height: 100vh;
     background: url('./img/bg2.jpeg') 50% 50% no-repeat;
+    input {
+        font-family: 'Tourney', cursive;
+        &::placeholder {
+            font-family: 'Tourney', cursive;
+        }
+    }
+    button {
+        font-family: 'Tourney', cursive;
+    }
 }
